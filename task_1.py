@@ -38,6 +38,8 @@ class HashTable:
                     return True
         return False
 
+# Тестуємо хеш-таблицю з методом delete:
+    
 H = HashTable(5)
 H.insert("apple", 10)
 H.insert("orange", 20)
@@ -47,6 +49,5 @@ print(H.get("apple"))   # Виведе: 10
 print(H.get("orange"))  # Виведе: 20
 print(H.get("banana"))  # Виведе: 30
 
-# Тестуємо хеш-таблицю з методом delete:
 H.delete("orange")
 print(H.get("orange"))
